@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <title>NY Times: mern stack</title>
+</head>
+<div class="container">
+    <!-- HEADER -->
+    <div class="row">
+        <div class="col-sm-12 jumbotron text-center">
+            <h1>New York Times Search</h1>
+            <h2>mern stack </h2>
+        </div>
+    </div>
+    <!-- SEARCH PARAMETERS SECTION -->
+    <div class="row panel">
+        <div class="row">
+            <div class="col-sm-12">
+                <h4>Search Parameters</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label>Search Term:</label>
+                    <input class="form-control" id="search-term" type="text">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label>Number of Records to Retrieve:</label>
+                    <input class="form-control" id="num-of-records" type="text">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label>Start Year (Optional):</label>
+                    <input class="form-control" id="start-year" type="text">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label>End Year (Optional):</label>
+                    <input class="form-control" id="end-year" type="text">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <input class="btn button button-info" type="submit" value="Search" id="search">
+                <input class="btn button button-info" type="submit" value="Clear Results" id="reset">
+            </div>
+        </div>
+    </div>
+    <!-- TOP ARTICLES SECTION -->
+    <div class="row panel">
+        <div class="row">
+            <div id="search-results" class="col-sm-12">
+                <h4>Top Articles</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../app/components/nytapiworker.js"></script>
+
+<body>
+</body>
+
+</html>
